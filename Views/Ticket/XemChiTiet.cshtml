@@ -1,0 +1,14 @@
+﻿@using WebSoatVeOnline.Models;
+@model Ve
+@{
+    ViewBag.Title = "XemChiTiet";
+    Layout = "~/Views/Layout/UserLayout.cshtml";
+    }
+
+
+    <div style="si"><img src="@Url.Content("~/images/imagesLocation/"+Model.HinhAnh)"</div>
+<div>Mã vé: @Model.MaVe</div>
+<div>Tên vé: @Model.TenVe</div>
+<div>Mô tả: @Model.MoTa</div>
+<div>Giá vé: @Model.GiaVe vnđ</div>                                    
+
