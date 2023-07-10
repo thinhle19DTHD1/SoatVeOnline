@@ -78,3 +78,7 @@ C:\Users\Thinh\Source\Repos\WebSoatVeOnline\WebSoatVeOnline\bin\EntityFramework.
 C:\Users\Thinh\Source\Repos\WebSoatVeOnline\WebSoatVeOnline\bin\EntityFramework.SqlServer.dll
 C:\Users\Thinh\Source\Repos\WebSoatVeOnline\WebSoatVeOnline\bin\EntityFramework.xml
 C:\Users\Thinh\Source\Repos\WebSoatVeOnline\WebSoatVeOnline\bin\EntityFramework.SqlServer.xml
+C:\Users\Thinh\Source\Repos\WebSoatVeOnline\WebSoatVeOnline\bin\PagedList.dll
+C:\Users\Thinh\Source\Repos\WebSoatVeOnline\WebSoatVeOnline\bin\PagedList.Mvc.dll
+C:\Users\Thinh\Source\Repos\WebSoatVeOnline\WebSoatVeOnline\bin\PagedList.xml
+C:\Users\Thinh\Source\Repos\WebSoatVeOnline\WebSoatVeOnline\bin\PagedList.Mvc.xml

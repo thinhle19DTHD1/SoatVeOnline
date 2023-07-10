@@ -112,7 +112,7 @@
             this.Controls.Add(this.cbbTpyeDevice);
             this.Controls.Add(this.label1);
             this.Name = "CheckQRCode";
-            this.Text = "Check QR Code";
+            this.Text = " ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CheckQRCode_FormClosing);
             this.Load += new System.EventHandler(this.CheckQRCode_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbQRCode)).EndInit();

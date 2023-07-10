@@ -1,0 +1,98 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<WebSoatVeOnline.Models.Ve>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới vé", "ThemMoi")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().MaVe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TenVe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().GiaVe)
+        </th> 
+        <th>
+            @Html.DisplayNameFor(model => model.First().MoTa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().HinhAnh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NgayCapNhat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SoLuongTon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().MaDiaDiem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().MaSuKien)
+        </th>
+        <th>Quản lý</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaVe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenVe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiaVe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoTa)
+        </td>
+        <td>
+            <div id="AnhVe"><img src="@Url.Content("~/images/"+item.HinhAnh)" width="200" height="200" /></div>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayCapNhat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongTon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiaDiem.TenDiaDiem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuKien.TenSuKien)
+        </td> 
+        <td>
+            @Html.ActionLink("Chỉnh sửa", "ChinhSua", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Hiển thị", "HienThi", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Xóa", "Xoa", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+<div class="menuPage">
+    <a>
+        Trang 
+        @Html.PagedListPager(Model, Page => Url.Action("Index", new { page = Page }))
+    </a>
+</div>
+
+<style>
+    .menuPage.li {
+        display: inline;
+    }
+</style>
