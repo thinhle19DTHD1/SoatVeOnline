@@ -74,9 +74,9 @@
             @Html.DisplayFor(modelItem => item.SuKien.TenSuKien)
         </td> 
         <td>
-            @Html.ActionLink("Chỉnh sửa", "ChinhSua", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Hiển thị", "HienThi", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Xóa", "Xoa", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Chỉnh sửa", "ChinhSua", new { @MaVe = item.MaVe }) |
+            @Html.ActionLink("Hiển thị", "HienThi", new { @MaVe = item.MaVe }) |
+            @Html.ActionLink("Xóa", "Xoa", new { @MaVe = item.MaVe })
         </td>
     </tr>
 }

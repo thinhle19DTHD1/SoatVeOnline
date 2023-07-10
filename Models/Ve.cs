@@ -11,6 +11,7 @@ namespace WebSoatVeOnline.Models
 {
     using System;
     using System.Collections.Generic;
+
     using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
 
@@ -34,7 +35,6 @@ namespace WebSoatVeOnline.Models
         [Required(ErrorMessage = "Vui lòng nhập mô tả")]
         [Display(Name = "Mô tả")]
         public string MoTa { get; set; }
-        
         [Display(Name = "hình ảnh")]
         public string HinhAnh { get; set; }
         [DataType(DataType.Date)]
@@ -51,7 +51,7 @@ namespace WebSoatVeOnline.Models
         [Required(ErrorMessage = "Vui lòng nhập mã sự kiện")]
         [Display(Name = "Mã sự kiện")]
         public Nullable<int> MaSuKien { get; set; }
-
+    
         public virtual ChiTietDonHang ChiTietDonHang { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DiaDiem> DiaDiems { get; set; }

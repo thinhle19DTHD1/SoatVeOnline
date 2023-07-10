@@ -1057,13 +1057,6 @@
     <Content Include="NivoSlider\nivo-slider.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\QuanLySoatVe.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QuanLySoatVe.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\QuanLySoatVe.edmx.diagram">
-      <DependentUpon>QuanLySoatVe.edmx</DependentUpon>
-    </Content>
     <Content Include="Content\TemplateAdmin\css\maps\horizontal-layout-dark\style.css.map" />
     <Content Include="Content\TemplateAdmin\css\maps\horizontal-layout-light\style.css.map" />
     <Content Include="Content\TemplateAdmin\css\maps\horizontal-layout\style.css.map" />
@@ -1199,6 +1192,13 @@
     <Content Include="Content\TemplateAdmin\vendors\typicons\typicons.eot" />
     <Content Include="Content\TemplateAdmin\vendors\typicons\typicons.ttf" />
     <Content Include="Content\TemplateAdmin\vendors\typicons\typicons.woff" />
+    <EntityDeploy Include="Models\QuanLySoatVe.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanLySoatVe.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\QuanLySoatVe.edmx.diagram">
+      <DependentUpon>QuanLySoatVe.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -1233,6 +1233,9 @@
     <Content Include="Views\Layout\AdminLayout.cshtml" />
     <Content Include="Views\TicketManage\Index.cshtml" />
     <Content Include="Views\TicketManage\ThemMoi.cshtml" />
+    <Content Include="Views\TicketManage\ChinhSua.cshtml" />
+    <Content Include="Views\TicketManage\HienThi.cshtml" />
+    <Content Include="Views\TicketManage\Xoa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

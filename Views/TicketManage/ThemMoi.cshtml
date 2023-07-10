@@ -7,10 +7,11 @@
 
 <h2>Tạo mới vé</h2>
 
-@using (Html.BeginForm("ThemMoi","TicketManage",FormMethod.Post, new {@enctype = "multipart/form-data"}))
+@using (Html.BeginForm("ThemMoi", "TicketManage", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+
 {
     @Html.AntiForgeryToken()
-    
+
 <div class="form-horizontal">
 
     <hr />
@@ -92,5 +93,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Trở về", "Index")
 </div>

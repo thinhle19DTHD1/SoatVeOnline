@@ -1,0 +1,91 @@
+﻿@model WebSoatVeOnline.Models.Ve
+
+@{
+    ViewBag.Title = "HienThi";
+    Layout = "~/Views/Layout/AdminLayout.cshtml";
+}
+
+<h2>HienThi</h2>
+
+<div>
+    <h4>Ve</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaVe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaVe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenVe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenVe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiaVe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaVe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HinhAnh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HinhAnh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayCapNhat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayCapNhat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuongTon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongTon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaDiem.TenDiaDiem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaDiem.TenDiaDiem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuKien.TenSuKien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuKien.TenSuKien)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh Sửa", "ChinhSua", new { @MaVe = Model.MaVe }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
