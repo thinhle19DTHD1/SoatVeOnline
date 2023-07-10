@@ -28,5 +28,29 @@ namespace WebSoatVeOnline.Controllers
             }
             return View(ve);
         }
+
+        [HttpGet]
+
+        public ActionResult Booking()
+        {
+
+            return View();
+        }
+        [HttpPost]
+        
+        
+        //random
+        public ActionResult Booking(DonHang dh)
+        {
+            string num_str;
+            Random rd = new Random();
+            num_str = rd.Next(1, 100000).ToString();
+
+            db.DonHangs.Add(dh);
+            db.SaveChanges();
+
+            return View();
+
+        }
     }
 }

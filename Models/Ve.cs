@@ -12,7 +12,6 @@ namespace WebSoatVeOnline.Models
     using System;
     using System.Collections.Generic;
     
-
     public partial class Ve
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,6 +19,7 @@ namespace WebSoatVeOnline.Models
         {
             this.DiaDiems = new HashSet<DiaDiem>();
         }
+    
         public int MaVe { get; set; }
         public string TenVe { get; set; }
         public Nullable<decimal> GiaVe { get; set; }
